@@ -1,0 +1,14 @@
+package com.eleks.demo.tests;
+
+import org.testng.annotations.Test;
+
+import com.eleks.demo.core.BaseTest;
+import com.eleks.demo.core.web.pages.HomePage;
+
+public class FirstTest extends BaseTest {
+	@Test
+	public void testMethod() {
+	new HomePage(driver).loadAndWaitUntilAvailable();
+	
+	}
+}

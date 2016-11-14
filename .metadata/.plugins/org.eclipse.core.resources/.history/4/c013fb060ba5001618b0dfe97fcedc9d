@@ -1,0 +1,26 @@
+package com.eleks.demo.tests;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import com.eleks.demo.core.BaseTest;
+import com.eleks.demo.core.web.pages.LoginPage;
+import com.eleks.demo.core.web.pages.MailPage;
+
+
+public class FirstTest extends BaseTest {
+	@Test
+	public void testMethod() {
+	final String username = "tester_demo";
+	final String password = "Yulichka1";
+	final String subject = "new1";
+	MailPage mailPage = new LoginPage(driver)
+		.loadAndWaitUntillAvailable()
+		.loginAs(username, password);
+	Assert.assertTrue(mailPage.isSubjectPresent(subject), "subject is not present");
+	
+	try {
+		Thread.sleep(2000);
+	} catch (Exception e) {}
+	}
+}

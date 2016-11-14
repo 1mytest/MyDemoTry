@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.eleks.demo.tests.FirstTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.86 sec - in com.eleks.demo.tests.FirstTest

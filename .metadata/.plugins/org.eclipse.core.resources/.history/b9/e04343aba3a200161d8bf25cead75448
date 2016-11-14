@@ -1,0 +1,5 @@
+package com.eleks.demo.core.web;
+
+public class WebComponent {
+
+}

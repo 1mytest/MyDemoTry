@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.testng.annotations.Test"/>
+<fullyQualifiedTypeName name="org.testng.annotations.BeforeSuite"/>
+<fullyQualifiedTypeName name="org.testng.annotations.AfterTest"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.firefox.FirefoxDriver"/>
+<fullyQualifiedTypeName name="com.eleks.demo.core.BaseTest"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.ie.InternetExplorerDriver"/>
+<fullyQualifiedTypeName name="org.testng.annotations.Parameters"/>
+<fullyQualifiedTypeName name="org.jboss.netty.handler.timeout.TimeoutException"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.TimeoutException"/>
+<fullyQualifiedTypeName name="com.eleks.demo.core.web.Component"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.NoSuchElementException"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.By"/>
+<fullyQualifiedTypeName name="com.eleks.demo.core.web.WebComponent"/>
+<fullyQualifiedTypeName name="com.eleks.demo.core.web.elements.Button"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.By.ByXPath"/>
+</qualifiedTypeNameHistroy>

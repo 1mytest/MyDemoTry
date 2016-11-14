@@ -1,0 +1,43 @@
+package com.eleks.demo.core.web.pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+import com.eleks.demo.core.web.WebPage;
+import com.eleks.demo.core.web.elements.Button;
+import com.eleks.demo.core.web.elements.TextInput;
+
+public class HomePage extends WebPage<HomePage> {
+	
+	private static final String Page_Url = "https://www.ukr.net";
+
+	public HomePage(WebDriver driver) {
+		super(driver);
+	
+	}
+
+	@Override
+	public HomePage load() {
+		driver.get(Page_Url);
+		return this;
+	}
+
+	@Override
+	public boolean isAvailable() {
+		
+		return getUsernameInput().waitUntillAvailable().isAvailable() && 
+				getPasswordInput().waitUntillAvailable().isAvailable() &&
+				getLoginButton().waitUntillAvailable().isAvailable();
+	}
+	
+	private TextInput getUsernameInput(){
+		return new TextInput(driver, By.name("Login")); 
+	}
+	private TextInput getPasswordInput(){
+		return new TextInput(driver, By.name("Password")); 
+	}
+	private Button getLoginButton(){
+		return new Button(driver, By.xpath("//*[@id='user-login-form']/div[5]/button"));
+	}
+	
+}

@@ -1,0 +1,36 @@
+package com.eleks.demo.core.web;
+
+public class Wait {
+
+	private static final int Default_Timeout = 30000;
+	private static final int Default_Retry_Delay = 500;
+	private Component component;
+	
+	public Wait(){
+		
+	}
+	public Wait forComponent(Component component){
+		this.component = component;
+		return this;
+	}
+	
+	public Component toBeAvailable(){
+		int timePassed = 0;
+		while (timePassed < Default_Timeout){
+			if (this.component.isAvailabe()){
+				return this.component;
+			}
+			timePassed = timePassed + delay();
+		}
+		return this.component;
+	}
+	
+	private int delay(){
+		try {
+			Thread.sleep(Default_Retry_Delay);
+			return Default_Retry_Delay;
+		} catch (InterruptedException e) {
+			throw new RuntimeException(e);
+		}
+	}
+}

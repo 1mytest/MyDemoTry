@@ -1,0 +1,20 @@
+package com.eleks.demo.tests;
+
+import org.testng.annotations.Test;
+
+import com.eleks.demo.core.BaseTest;
+import com.eleks.demo.core.web.pages.LoginPage;
+import com.eleks.demo.core.web.pages.MailPage;
+
+public class FirstTest extends BaseTest {
+	@Test
+	public void testMethod() {
+	new LoginPage(driver)
+	.loadAndWaitUntillAvailable()
+	.loginAs("tester_demo", "Yulichka1");
+	System.out.println(new MailPage(driver).getSubject());
+	try {
+		Thread.sleep(2000);
+	} catch (Exception e) {}
+	}
+}

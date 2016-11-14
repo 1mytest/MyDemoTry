@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+org.eclipse.jdt.core.classpathVariable.ECLIPSE_HOME=C\:/Users/Admin/Downloads/eclipse-jee-mars-2-win32-x86_64/eclipse/
+org.eclipse.jdt.core.classpathVariable.JUNIT_HOME=C\:/Users/Admin/Downloads/eclipse-jee-mars-2-win32-x86_64/eclipse/plugins/org.junit_4.12.0.v201504281640/
+org.eclipse.jdt.core.classpathVariable.M2_REPO=C\:/Users/Admin/.m2/repository
+org.eclipse.jdt.core.classpathVariable.TESTNG_HOME=C\:/Users/Admin/Downloads/eclipse-jee-mars-2-win32-x86_64/eclipse/plugins/org.testng.eclipse_6.9.11.201604020423
+org.eclipse.jdt.core.codeComplete.visibilityCheck=enabled

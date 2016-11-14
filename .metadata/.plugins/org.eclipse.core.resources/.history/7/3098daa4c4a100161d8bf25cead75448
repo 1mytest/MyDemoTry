@@ -1,0 +1,10 @@
+package com.eleks.demo.core.web;
+
+public abstract class Component<T extends Component<T>> {
+
+	public abstract boolean isAvailabe();
+	
+	public T waitUntillAvailabe(){
+		return new Wait<T>().forComponent((T)this).toBeAvailable();
+	}
+}

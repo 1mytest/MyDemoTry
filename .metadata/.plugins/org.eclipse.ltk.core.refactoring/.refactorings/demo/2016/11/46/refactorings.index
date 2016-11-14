@@ -1,0 +1,9 @@
+1478509480898	Delete element
+1478512892765	Copy compilation unit
+1478516687804	Rename type 'HomePage'
+1478530584683	Rename method 'loadAndWaitUntilAvailable'
+1478537628038	Extract local variable 'username'
+1478537643228	Extract local variable 'password'
+1478537657620	Extract local variable 'subject'
+1478537707739	Rename method 'subjectIsPresent'
+1478537819392	Rename local variable 'password'

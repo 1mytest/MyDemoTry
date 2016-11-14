@@ -1,0 +1,34 @@
+package com.eleks.demo.core.web.pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+import com.eleks.demo.core.web.WebPage;
+import com.eleks.demo.core.web.elements.Link;
+
+public class MailPage extends WebPage<MailPage> {
+	
+	private static final String Page_Url = "https://mail.ukr.net/desktop#msglist/f0/p0";
+
+	public MailPage(WebDriver driver) {
+		super(driver);
+	
+	}
+	
+	@Override
+	public MailPage load() {
+		driver.get(Page_Url);
+		return this;
+	}
+
+	@Override
+	public boolean isAvailable() {
+		
+		return getInboxLink().isAvailable();
+	}
+	
+	private Link getInboxLink(){
+		return new Link(driver, By.className("sidebar__list-link-name"));
+	}
+
+}
